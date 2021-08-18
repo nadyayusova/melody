@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Bebas Neue";
+  src: local("BebasNeueRegular"),
+    url("../fonts/BebasNeueRegular.woff2") format("woff2"),
+    url("../fonts/BebasNeueRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -6,7 +16,8 @@ body {
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  background-color: #E5E5E5;
+  background-color: #ffffff;
+  color: #635854;
 }
 
 a {
@@ -22,14 +33,14 @@ a {
 .page-header {
   padding: 8px 0;
   background-color: #635854;
-  border-bottom: 4px solid #3596F5;
+  border-bottom: 4px solid #3596f5;
 }
 
 .page-header__nav {
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .main-nav {
@@ -53,7 +64,7 @@ a {
 }
 
 .main-nav__link {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .main-nav__contacts {
@@ -71,5 +82,96 @@ a {
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
+}
+
+.page-main {
+  display: flex;
+  max-width: 1280px;
+  margin: auto;
+  padding-top: 64px;
+}
+
+.page-main__house-img path {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.page-main__house-img path:hover {
+  opacity: 1;
+}
+
+.page-main__floor-selection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.page-main__floor-selection-title,
+.counter__floor-number {
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-weight: 400;
+  color: #635854;
+}
+
+.page-main__floor-selection-title {
+  margin: 0;
+  font-size: 37px;
+  line-height: 44px;
+  text-transform: uppercase;
+}
+
+.counter__floor-number {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 110px;
+}
+
+.page-main__counter {
+  margin-top: 116px;
+  margin-bottom: 116px;
+}
+
+.counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.counter__button {
+  background-color: #ffffff;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.counter__button--down {
+  transform: rotateX(180deg);
+}
+
+.counter__arrow-img {
+  display: block;
+}
+
+.page-main__btn-select {
+  padding: 16px 36px;
+  color: #ffffff;
+  background-color: #3596f5;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
