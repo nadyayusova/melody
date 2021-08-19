@@ -97,6 +97,10 @@ a {
   cursor: pointer;
 }
 
+path.current-floor {
+  opacity: 1;
+}
+
 .page-main__house-img path:hover {
   opacity: 1;
 }
@@ -125,14 +129,14 @@ a {
 }
 
 .counter__floor-number {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 0;
   font-size: 110px;
+  line-height: 1;
 }
 
 .page-main__counter {
-  margin-top: 116px;
-  margin-bottom: 116px;
+  margin-top: 95px;
+  margin-bottom: 95px;
 }
 
 .counter {
@@ -143,7 +147,7 @@ a {
 
 .counter__button {
   background-color: #ffffff;
-  padding: 0;
+  padding: 20px;
   border: none;
   cursor: pointer;
 }
